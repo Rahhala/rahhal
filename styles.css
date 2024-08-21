@@ -1,0 +1,238 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Header */
+/*header {
+    background-color: #080909;
+    padding: 20px;
+    color: #ecf0f1;
+    text-align: center;
+}
+
+
+/* Navigation */
+
+nav {
+      /*background-color: #302c2c;*/
+    padding: 5px;
+    
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #302c2c;
+}
+
+/* Container */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section */
+.section {
+    display: none;
+    margin: 20px 0;
+    background-color: ##302c2c;
+    padding: 20px;
+    border-radius: 8px;
+    animation: fadeIn 1s ease-out;
+}
+
+.section.active {
+    display: block;
+}
+
+/* Section Titles */
+h2 {
+    border-bottom: 2px solid ##302c2c;
+    padding-bottom: 10px;
+}
+
+/* Profile */
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.profile-img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #000000;
+}
+
+/* About Section */
+/* About Section */
+#about {
+    background-color: #302c2c; /* لون الخلفية الداكنة */
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px 0; /* مسافة صغيرة بين الأقسام */
+    color: #ecf0f1; /* لون النصوص */
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #ffffff; /* اللون الأساسي للعناوين */
+}
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0;
+    color: #ecf0f1; /* لون النصوص */
+transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+/* Education and Experience Items */
+.education-item, .experience-item, .skills-list .skill-item {
+    background-color: #302c2c;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.education-item:hover, .experience-item:hover, .skills-list .skill-item:hover {
+    transform: scale(1.03);
+    background-color: #302c2c;
+}
+
+/* Skill Bars */
+.skill-bar {
+    position: relative;
+    height: 10px;
+    background: #302c2c;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.skill-bar span {
+    display: block;
+    height: 100%;
+    width: 0;
+    background: #acb0af;
+    transition: width 1s ease-in-out;
+}
+
+/* Contact Info */
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contact-info li {
+    margin: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ecf0f1;
+    background-color: #302c2c;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.contact-item:hover {
+    transform: scale(1.05);
+    background-color: #302c2c;
+}
+
+/* Footer */
+.footer {
+    background-color: #e6e6e6;
+    padding: 10px;
+    text-align: center;
+    color: #ecf0f1;
+}
+
+/* Date and Time */
+.datetime {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.datetime p {
+    font-size: 1.2em;
+    color: #ecf0f1;
+}
+
+/* Background Animation */
+@keyframes moveBackground {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #414d55, #311e3b, #e74c3c, #f39c12);
+    background-size: 400% 400%;
+    animation: moveBackground 15s ease infinite;
+    z-index: -1;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
